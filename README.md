@@ -24,7 +24,4 @@ To set up this repository, follow these steps:
 ## Testing
 
 To run the tests for this repository, use the following Maven command:
-
-    ```
-    mvn test
-    ```
+    ```mvn test```
