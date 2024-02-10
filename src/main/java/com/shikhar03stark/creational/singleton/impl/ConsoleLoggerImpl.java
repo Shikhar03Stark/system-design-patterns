@@ -1,17 +1,20 @@
 package com.shikhar03stark.creational.singleton.impl;
 
 import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 import com.shikhar03stark.creational.singleton.Logger;
 
 public class ConsoleLoggerImpl implements Logger {
 
-    private final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-YYYY HH:mm:ss.SSS");
+    private final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("YYYY-MM-dd HH:mm:ss.SSS");
 
     private String getCurrentFormattedTime() {
         final Instant currentInstant = Instant.now();
-        final String time = dateTimeFormatter.format(currentInstant);
+        final String time = LocalDateTime.ofInstant(currentInstant, ZoneId.systemDefault()).format(dateTimeFormatter);
         return time;
     }
     
