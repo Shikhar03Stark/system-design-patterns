@@ -1,5 +1,7 @@
 # System Design Patterns
 
+[![Java CI with Maven](https://github.com/Shikhar03Stark/system-design-patterns/actions/workflows/maven.yml/badge.svg)](https://github.com/Shikhar03Stark/system-design-patterns/actions/workflows/maven.yml)
+
 This repository contains a collection of system design patterns implemented in Java. Each pattern is accompanied by tests to check the functionality and design of the code.
 
 ## Setup
